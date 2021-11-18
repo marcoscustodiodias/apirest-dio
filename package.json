@@ -1,11 +1,11 @@
 {
-  "name": "apirest-dio",
+  "name": "dio-node-user-authentication-api",
   "version": "1.0.0",
-  "description": "Microservice criado durante live Dio.",
-  "main": "index.js",
+  "description": "Microserviço de autenticação de usuários feito em nodejs com o intuito de contribuir com o conhecimento desta comunidade DEV incrível!",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./index.js"
+    "build": "tsc -p .",
+    "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts",
+    "start": "node ./dist/index.js"
   },
   "author": "Marcos Custodio Dias",
   "license": "ISC"
